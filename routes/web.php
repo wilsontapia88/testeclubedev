@@ -18,5 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/products', 'ProductsController@index')->name('products.create');
+Route::get('/products', 'ProductsController@index')->name('products');
+Route::get('/products/create', 'ProductsController@create')->name('products.create');
+Route::get('/products/edit/{id}', 'ProductsController@edit')->name('products.edit');
+Route::put('/products/{id}/update', 'ProductsController@update')->name('products.update');
 Route::post('/products', 'ProductsController@store')->name('products.store');

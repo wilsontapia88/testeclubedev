@@ -50,7 +50,7 @@
                             @endif
                         @else
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Listar Usuarios <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="{{route('products')}}">Listar produtos <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('products.create')}}">Criar produto</a>
